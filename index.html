@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <script>
     function showMessage() {
-        navigator.clipboard.writeText('IP')
+        navigator.clipboard.writeText('inbuild-mc.ru')
     }
 </script>
 <style>
@@ -48,7 +48,13 @@
         font-size: 30px;
         font-family: 'Minecraft Rus', 'Roboto', sans-serif;
     }
+    .all3 {
+        font-size: 25px;
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+    }
     .btn {
+        font-family: 'Minecraft Rus', 'Roboto', sans-serif;
+        src: url("fonts/minecraft.ttf");
         display: inline-block;
         padding: 15px 30px;
         border: none;
@@ -91,6 +97,16 @@
         <p class="all">Сервер InBuild</p>
         <p><img width="10%" src='Logo.png' alt='image'></p>
         <p class="all2">Сервер InBuild на версию 1.12.2 с модами!</p>
-        <button type="button" class="btn" id="btn1" onclick="showMessage()">Копировать IP</button>
+        <br>
+        <p class="all3"><strong>1.</strong> Как скачать моды?</p>
+        <form action="https://telegra.ph/Kak-skachat-mody-dlya-servera-InBuild-05-06" target="_blank">
+            <button class="btn">Инструкция</button>
+        </form>
+        <p class="all3"><strong>2.</strong> Скачать моды</p>
+        <form action="https://drive.google.com/file/d/1VlSVwmDLIUZSexbM3Ve0EVyf_zUdD1rO/view?usp=sharing" target="_blank">
+            <button class="btn">Скачать</button>
+        </form>    
+        <p class="all3"><strong>3.</strong> Копировать IP</p>    
+        <button type="button" class="btn" id="btn1" onclick="showMessage()">Копировать</button>
     </body>
 </html>
